@@ -69,7 +69,7 @@ sudo chown -R tomcat:tomcat /opt/apache-tomcat-10.0.27/
 whoami
 ```
 
-## Main configuration filesc
+## Main configuration files
 
 ```t
 cd /opt/apache-tomcat-10.0.27/conf/
@@ -87,6 +87,8 @@ cp tomcat-users.xml tomcat.users.xml.backup
 vim tomcat-uses.xml
 ```
 
-- To deploy a .war file, there are different ways to deploy .war files GUI Method, CLI Method
+- To deploy a .war file, there are different ways to deploy .war files
+* GUI Method
+* CLI Method
 - To deploy our .war file using GUI Method, what is the role? So that tomcat defined few roles in tomcat-users.xml
 

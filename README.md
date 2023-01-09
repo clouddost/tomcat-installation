@@ -88,7 +88,7 @@ vim tomcat-uses.xml
 ```
 
 - To deploy a .war file, there are different ways to deploy .war files
-* GUI Method
-* CLI Method
+  * GUI Method
+  * CLI Method
 - To deploy our .war file using GUI Method, what is the role? So that tomcat defined few roles in tomcat-users.xml
 

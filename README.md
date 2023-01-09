@@ -152,7 +152,7 @@ vim manager.xml
 
 ```t
 <Context privileged="true" antiResourceLocking="false"
-         docBase="${catalina.catalina.valves.RemoteAddrValve" allow="^.*$">
+         docBase="${catalina.catalina.valves.RemoteAddrValve" allow="^.*$" />
   <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
 </Context>
 ```

@@ -98,3 +98,25 @@ cp tomcat-users.xml tomcat.users.xml.backup
 vim tomcat-users.xml
 ```
 
+```t
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+    version="1.0">
+  <role rolename="manager-gui"/>
+  <user username="tomcatmanager" password="tomcatmanager" roles="manager-gui"/>
+</tomcat-users>
+```
+## Goto to /opt/apache-tomcat-10.0.27/bin and start tomcat
+
+```t
+cd /opt/apache-tomcat-10.0.27/bin
+```
+
+```t
+./startup.sh
+```
+
+
+

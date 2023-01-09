@@ -29,19 +29,20 @@ https://tomcat.apache.org/
 wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz
 ```
 
-Extract the downloaded file into /opt/ directory
+## Extract the downloaded file into /opt/ directory
 
 ```t
 sudo tar -xvzf apache-tomcat-10.0.27.tar.gz -C /opt/
 ```
 
-Navigate to /opt/ directory
+## Navigate to /opt/ directory
 
 ```t
 cd /opt/
 ```
 
-Now, create the new "tomcat" user, we need to provide permission of "/opt/apache-tomcat-10.0.27" directory to newly created "tomcat" user.
+## Now, create the new "tomcat" user
+- We need to provide permission of "/opt/apache-tomcat-10.0.27" directory to newly created "tomcat" user.
 
 ```t
 sudo useradd tomcat
@@ -51,13 +52,13 @@ sudo useradd tomcat
 sudo passwd tomcat
 ```
 
-First check who is the owner of the "/opt/apache-tomcat-10.0.27/" directory, you can check using
+## First check who is the owner of the "/opt/apache-tomcat-10.0.27/" directory, you can check using
 
 ```t
 ls -ld /opt/apache-tomcat-10.0.27
 ```
 
-Change the permission to "tomcat" user using:
+## Change the permission to "tomcat" user using:
 
 ```t
 sudo chown -R tomcat:tomcat /opt/apache-tomcat-10.0.27/

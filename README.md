@@ -134,8 +134,32 @@ ps -ef | grep -i tomcat
 
 ![image](https://user-images.githubusercontent.com/111498842/211397401-7c2a4a21-41e5-4752-b8e8-acb5d7f814de.png)
 
-## Click on Manager App you will get follwoing error
+- Click on "Manager App" you will get follwoing 403 error
 
 ![image](https://user-images.githubusercontent.com/111498842/211398639-515675d1-5e98-43eb-ad33-071f2036025e.png)
+
+- All allowed localhost from whatever ip-address you wanted to allowed people to access your tomcat web application manager using GUI method, we required to create a file here in /catalina/localhost
+
+```t
+cd /opt/apache-tomcat-10.0.27/conf/Catalina/localhost
+```
+
+```t
+vim manager.xml
+```
+
+- Add following content to manager.xml file
+
+```t
+<Context privileged="true" antiResourceLocking="false"
+         docBase="${catalina.catalina.valves.RemoteAddrValve" allow="^.*$">
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
+```
+
+- Now you can go to Manager App and enter the manager-gui username and password this time it will not through an error
+
+![image](https://user-images.githubusercontent.com/111498842/211401818-c77d788d-c598-48af-b9f5-d9738f8d17b4.png)
+
 
 

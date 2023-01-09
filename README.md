@@ -52,7 +52,7 @@ sudo useradd tomcat
 sudo passwd tomcat
 ```
 
-## First check who is the owner of the "/opt/apache-tomcat-10.0.27/" directory, you can check using
+## First check who is the owner of the "/opt/apache-tomcat-10.0.27/" directory
 
 ```t
 ls -ld /opt/apache-tomcat-10.0.27
@@ -63,3 +63,4 @@ ls -ld /opt/apache-tomcat-10.0.27
 ```t
 sudo chown -R tomcat:tomcat /opt/apache-tomcat-10.0.27/
 ```
+## 

@@ -117,9 +117,25 @@ cd /opt/apache-tomcat-10.0.27/bin
 ```t
 ./startup.sh
 ```
-- If tomcat started then you can visit http://"<public-ip>":8080/
+- You can also check if tomcat is started or not
+```t
+sudo service status tomcat
+```
+OR
+```t
+sudo systemctl status tomcat
+```
+OR
+```t
+ps -ef | grep -i tomcat
+```
+
+- If tomcat started then you can visit http://your-public-ip:8080/
 
 ![image](https://user-images.githubusercontent.com/111498842/211397401-7c2a4a21-41e5-4752-b8e8-acb5d7f814de.png)
 
+## Click on Manager App you will get follwoing error
+
+![image](https://user-images.githubusercontent.com/111498842/211398639-515675d1-5e98-43eb-ad33-071f2036025e.png)
 
 

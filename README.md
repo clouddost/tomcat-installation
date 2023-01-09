@@ -117,7 +117,7 @@ cd /opt/apache-tomcat-10.0.27/bin
 ```t
 ./startup.sh
 ```
-- If tomcat started then you can visit http://<public-ip>:8080/
+- If tomcat started then you can visit http://'<public-ip>':8080/
 
 ![image](https://user-images.githubusercontent.com/111498842/211397401-7c2a4a21-41e5-4752-b8e8-acb5d7f814de.png)
 

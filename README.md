@@ -1,2 +1,1 @@
-# Installing tomcat using binary method on amazon linux 2
-
+# Installing Tomcat using Binary Method

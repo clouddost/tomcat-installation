@@ -83,12 +83,18 @@ cd /opt/apache-tomcat-10.0.27/conf/
 cp tomcat-users.xml tomcat.users.xml.backup
 ```
 
-```t
-vim tomcat-uses.xml
-```
-
 - To deploy a .war file, there are different ways to deploy .war files
   * GUI Method
   * CLI Method
+
 - To deploy our .war file using GUI Method, what is the role? So that tomcat defined few roles in tomcat-users.xml
+  * Manager-gui - allow access to the HTML GUI.
+  * Manager-script - allow access to the HTTP API.
+  * Manager-jmx - allows access to JMX proxy.
+  * Manager-status - allows access to the status pages only.
+
+
+```t
+vim tomcat-users.xml
+```
 

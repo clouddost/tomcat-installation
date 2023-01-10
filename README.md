@@ -26,7 +26,7 @@ mvn -v
 ```t
 sudo yum install git-all -y
 ```
-## Confirm the Git is installed or not using following command:
+- Confirm the Git is installed or not using following command:
 
 ```t
 git -v 

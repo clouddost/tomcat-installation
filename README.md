@@ -44,25 +44,30 @@ https://tomcat.apache.org/
 
 - Navigate to downlaod section on the page of version you selected > Binary Distributions > Core >  Now, right click and copy the URL "tar.gz" file
 
-## Goto to your Amaozn Linux 2 terminal 
+- Goto to your Amaozn Linux 2 terminal 
 
 ```t
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
 ```
 
-## Extract the downloaded file into /opt/ directory
+- Extract the downloaded file into /opt/ directory
 
 ```t
-sudo tar -xvzf apache-tomcat-10.0.27.tar.gz -C /opt/
+sudo tar -xvzf apache-tomcat-9.0.70.tar.gz -C /opt/
 ```
 
-## Navigate to /opt/ directory
+- Navigate to /opt/ directory
 
 ```t
 cd /opt/
 ```
+- Rename "apache-tomcat-9.0.70" directory to somthing simple to read
 
-## Now, create the new "tomcat" user
+```t
+sudo mv apache-tomcat-9.0.70 apache-tomcat-9
+```
+
+- Now, create the new "tomcat" user
 - We need to provide permission of "/opt/apache-tomcat-10.0.27" directory to newly created "tomcat" user.
 
 ```t
@@ -73,7 +78,7 @@ sudo useradd tomcat
 sudo passwd tomcat
 ```
 
-## First check who is the owner of the "/opt/apache-tomcat-10.0.27/" directory
+- First check who is the owner of the "/opt/apache-tomcat-10.0.27/" directory
 
 ```t
 ls -ld /opt/apache-tomcat-10.0.27
@@ -87,18 +92,22 @@ sudo chown -R tomcat:tomcat /opt/apache-tomcat-10.0.27/
 ## Switch to tomcat user
 
 ```t
+su tomcat # and enter your tomcat user password
+```
+
+```t
 whoami
 ```
 
-## Main configuration files
+- Main configuration files
 
 ```t
 cd /opt/apache-tomcat-10.0.27/conf/
 ```
 
-## We need to remember:
-- We need to create an application user when we are deploying a war file, using which user we are going to use. So that information is present inside tomcat-user.xml file
-- We never distrub original files, so make it a backup
+- We need to remember:
+ * We need to create an application user when we are deploying a war file, using which user we are going to use. So that information is present inside tomcat-user.xml file
+ * We never distrub original files, so make it a backup
 
 ```t
 cp tomcat-users.xml tomcat.users.xml.backup

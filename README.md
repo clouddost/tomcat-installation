@@ -5,7 +5,7 @@
 ```t
 sudo amazon-linux-extras install java-openjdk11 -y
 ```
-## Confirm the Java is installed or not using following command:
+- Confirm the Java is installed or not using following command:
 
 ```t
 java -version
@@ -15,10 +15,21 @@ java -version
 ```t
 sudo yum install maven -y
 ```
+- Confirm the Maven is installed or not using following command:
+
+```t
+mvn -v
+```
+
 ## Install Git
 
 ```t
 sudo yum install git-all -y
+```
+## Confirm the Git is installed or not using following command:
+
+```t
+git -v 
 ```
 
 ## Now, Download and Install Apache Tomcat:

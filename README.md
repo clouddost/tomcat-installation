@@ -3,12 +3,22 @@
 ## Installing Java 11 and Open JDK 11 on Amazon Linux 2:
 
 ```t
-sudo amazon-linux-extras install java-openjdk11
+sudo amazon-linux-extras install java-openjdk11 -y
 ```
 ## Confirm the Java is installed or not using following command:
 
 ```t
 java -version
+```
+## Install Maven
+
+```t
+sudo yum install maven -y
+```
+## Install Git
+
+```t
+sudo yum install git-all -y
 ```
 
 ## Now, Download and Install Apache Tomcat:
@@ -26,7 +36,7 @@ https://tomcat.apache.org/
 ## Goto to your Amaozn Linux 2 terminal 
 
 ```t
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
 ```
 
 ## Extract the downloaded file into /opt/ directory
